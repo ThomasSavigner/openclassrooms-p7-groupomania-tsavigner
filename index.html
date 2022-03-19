@@ -2,70 +2,80 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
         <link rel="icon" href="/assets/logo-monochrome-red.png" type="image/x-icon">
         <title>GroupoSpeak</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+              integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="style/style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
-    <body class="bg-secondary">
-      <header class="bg-primary d-flex justify-content-between m-1">
-        <img src="assets/icon-left-font-monochrome-white.png" alt="logo & brand" class="logo-brand d-none d-md-block m-2">
-        <nav class="navbar navbar-expand-md navbar-dark">
-          <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <body class="bg-color2">
+      <header class="head-nav1 d-flex justify-content-between px-1">
+        <div class="dropdown d-flex flex-column justify-content-center">
+          <button class="btn btn-sm dropdown-toggle text-light color-1 d-flex flex-column justify-content-center align-items-center" 
+                href="#" id="settingsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="material-icons text-light">tune</span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-md-none">
-              <li class="nav-item d-flex flex-column align-items-center text-light">
-                <span class="material-icons">contrast</span>
-                <span>contrast</span>
+            <ul class="dropdown-menu color-1 rounded" aria-labelledby="settingsDropdown">
+              <li class="dropdown-item text-light">
+                <div class="d-flex justify-content-start">
+                  <span class="material-icons">contrast</span>
+                  <span class="mx-3">contrast</span>
+                </div>     
               </li>
-            </ul>
-          </div>
-          <ul class="list-inline me-auto mb-2 mb-lg-0 d-none d-md-block ul-nav-width">
-              <li class="list-inline-item">
+          </ul>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark w-md">
+          <a href="#" class="nav-link">
+            <img src="assets/icon-left-font-monochrome-white.png" alt="logo & brand" 
+                class="navbar-brand logo-brand d-none d-md-block">
+          </a>
+          <ul class="navbar-nav me-auto flex-row color-1 rounded fixed-bottom position-list position-md-static my-1 list-width list-width-md">
+              <li class="nav-item li-navbar-size">
                 <a class="nav-link d-flex flex-column align-items-center text-light" aria-current="page" href="#">
                   <span class="material-icons">hub</span>
-                  <span>Home</span>
+                  <span class="d-none d-md-block">Home</span>
                 </a>
               </li>
-              <li class="list-inline-item">
+              <li class="nav-item li-navbar-size">
                 <a class="nav-link d-flex flex-column align-items-center text-light" href="#">
                   <span class="material-icons">chat</span>
-                  <span>Post</span>
+                  <span class="d-none d-md-block">Post</span>
                 </a>
               </li>
-              <li class="list-inline-item">
-                <a class="nav-link dropdown-toggle d-flex flex-column align-items-center text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item li-navbar-size mx-md-3">                
+                <a class="nav-link d-flex flex-column align-items-center text-light" href="#">
                   <span class="material-icons">search</span>
-                  <span>Rechercher</span>
+                  <span class="d-none d-md-block">Rechercher</span>
                 </a>
-                <ul class="dropdown-menu bg-primary">
-                  <li>
-                    <form class="dropdown-item d-flex">
-                      <input class="form-control me-2" type="search" placeholder="mots-clés, sujet..." aria-label="Search">
-                      <button class="btn btn-outline-light" type="submit">Go!</button>
-                    </form>
-                  </li>
-                </ul>
               </li>
-              <li class="list-inline-item">
-                <a class="nav-link d-flex flex-column align-items-center text-light">
-                  <span class="material-icons">contrast</span>
-                  <span>contrast</span>
+              <li class="nav-item d-md-none li-navbar-size">
+                <a class="nav-link d-flex flex-column align-items-center text-light" href="#">
+                  <span class="material-icons text-light">list_alt</span>
+                </a>
+              </li>
+              <li class="nav-item d-md-none li-navbar-size">
+                <a class="nav-link d-flex flex-column align-items-center text-light" href="#">
+                  <span class="material-icons text-light">group</span>
+                </a>
+              </li>
+              <li class="nav-item d-md-none li-navbar-size">
+                <a class="nav-link d-flex flex-column align-items-center text-light" href="#">
+                  <span class="material-icons text-light">notifications</span>
+                  <span class="material-icons text-light d-none">notifications_active</span>
                 </a>
               </li>
             </ul>
         </nav>
-        <img src="assets/logo-monochrome-red.png" alt="logo" class="logo-size d-md-none">
-        <div class="bg-tertio rounded-circle mx-2 mt-3 useraccount"></div>
+        <h1 class="text-light flex-grow position-absolute h1-position position-md-static mt-md-3 pt-md-3">GroupoSpeak !</h1>
+        <img src="assets/logo-monochrome-grey.png" alt="logo" class="logo position-absolute d-md-none">
+        <div class="bg-tertio rounded-circle mx-2 my-2 mx-md-3 my-md-3 useraccount"></div>
       </header>
       <main>
-        <h1>hello world</h1>
+        
       </main>
-      <script src="bootstrap-5.1.3/dist/js/bootstrap.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+              integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>      
