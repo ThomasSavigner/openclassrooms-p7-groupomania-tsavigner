@@ -55,15 +55,16 @@ h1 {
 }
 
 .h1-position {
-  top: 1.3em;
-  left: 4.5em;
-  z-index:1;
+  top: 1.15em;
+  left: 27%;
+  z-index: 1;
 }
 
 .logo {
   width: 70px;
-  left: 7.75em;
-  z-index:0;
+  top: -0.45%;
+  left: 37.5%;
+  z-index: 0;
 }
 .useraccount {
   width: 50px;
