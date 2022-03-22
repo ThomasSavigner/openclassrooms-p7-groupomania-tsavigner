@@ -3,17 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="icon" href="/assets/logo-monochrome-red.png" type="image/x-icon">
+        <link rel="icon" href="/icons/logo-monochrome-red.png" type="image/x-icon">
         <title>GroupoSpeak</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
               integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="style/style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
-    <body class="bg-color2">
-      <header class="head-nav1 d-flex justify-content-between px-1">
+    <body class="bg-color4">
+      <header class="color-3 d-flex justify-content-between px-1 position-fixed w-100 header-top">
         <div class="dropdown d-flex flex-column justify-content-center">
-          <button class="btn btn-sm dropdown-toggle text-light color-1 d-flex flex-column justify-content-center align-items-center" 
+          <button class="btn btn-sm dropdown-toggle text-light color-1 d-flex flex-column justify-content-center 
+                        align-items-center" 
                 href="#" id="settingsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <span class="material-icons text-light">tune</span>
           </button>
@@ -21,17 +22,18 @@
               <li class="dropdown-item text-light">
                 <div class="d-flex justify-content-start">
                   <span class="material-icons">contrast</span>
-                  <span class="mx-3">contrast</span>
+                  <span class="mx-3">Mode sombre</span>
                 </div>     
               </li>
           </ul>
         </div>
-        <nav class="navbar navbar-expand-md navbar-dark w-md">
+        <nav class="navbar navbar-expand-md navbar-dark">
           <a href="#" class="nav-link">
-            <img src="assets/icon-left-font-monochrome-white.png" alt="logo & brand" 
+            <img src="icons/icon-left-font-monochrome-white.png" alt="logo & brand" 
                 class="navbar-brand logo-brand d-none d-md-block">
           </a>
-          <ul class="navbar-nav me-auto flex-row color-1 rounded fixed-bottom position-list position-md-static my-1 list-width list-width-md">
+          <ul class="navbar-nav me-auto flex-row justify-content-between color-1 rounded fixed-bottom position-list
+                     position-md-static list-width-md mx-auto mx-md-2 my-5 my-md-0 w-75">
               <li class="nav-item li-navbar-size">
                 <a class="nav-link d-flex flex-column align-items-center text-light" aria-current="page" href="#">
                   <span class="material-icons">hub</span>
@@ -40,24 +42,20 @@
               </li>
               <li class="nav-item li-navbar-size">
                 <a class="nav-link d-flex flex-column align-items-center text-light" href="#">
+                  <span class="material-icons text-light">list_alt</span>
+                  <span class="d-none d-md-block">Thèmes</span>
+                </a>
+              </li>
+              <li class="nav-item li-navbar-size">
+                <a class="nav-link d-flex flex-column align-items-center text-light" href="#">
                   <span class="material-icons">chat</span>
                   <span class="d-none d-md-block">Post</span>
                 </a>
               </li>
-              <li class="nav-item li-navbar-size mx-md-3">                
+              <li class="nav-item li-navbar-size mx-md-1">                
                 <a class="nav-link d-flex flex-column align-items-center text-light" href="#">
                   <span class="material-icons">search</span>
                   <span class="d-none d-md-block">Rechercher</span>
-                </a>
-              </li>
-              <li class="nav-item d-md-none li-navbar-size">
-                <a class="nav-link d-flex flex-column align-items-center text-light" href="#">
-                  <span class="material-icons text-light">list_alt</span>
-                </a>
-              </li>
-              <li class="nav-item d-md-none li-navbar-size">
-                <a class="nav-link d-flex flex-column align-items-center text-light" href="#">
-                  <span class="material-icons text-light">group</span>
                 </a>
               </li>
               <li class="nav-item d-md-none li-navbar-size">
@@ -68,14 +66,181 @@
               </li>
             </ul>
         </nav>
-        <h1 class="text-light flex-grow position-absolute h1-position position-md-static mt-md-3 pt-md-3">GroupoSpeak !</h1>
-        <img src="assets/logo-monochrome-grey.png" alt="logo" class="logo position-absolute d-md-none">
-        <div class="bg-tertio rounded-circle mx-2 my-2 mx-md-3 my-md-3 useraccount"></div>
+        <h1 class="text-light flex-grow position-absolute h1-position position-md-static pt-md-4">GroupoSpeak</h1>
+        <img src="icons/logo-monochrome-grey.png" alt="logo" class="logo position-absolute d-md-none">
+        <div class="bg-tertio rounded-circle mx-2 my-2 mx-md-3 my-md-3 avatar-container">
+          <img alt="user account icon" src="icons/round_account_circle_black_24dp.png" class="w-100">
+        </div>
       </header>
       <main>
-        
+        <article class="row mx-0">
+          <div class="d-none d-md-block col-md-1 bg-dark bg-opacity-25 p-0 position-md-fixed vh-100 container-img-position">
+            <img src="images/the-blowup-17qno4cS6l0-unsplash.jpg" alt="façade de building vitré" class="img-fit w-100 h-100 ">
+          </div>
+          <div class="d-flex flex-column px-1 col-md-6 position-relative flow-position flow-md-position flow-md-width mx-md-1">
+            <section class="border border-dark mt-1 card color-4">
+                <header class="d-flex p-1 color-3 card-header">
+                  <div class="rounded-circle avatar-container color-4 mt-1 mx-1">
+                    <img alt="user account icon" src="icons/round_account_circle_black_24dp.png" class="w-100">
+                  </div>
+                  <div class="mx-2 text-light">
+                    <h2 class="my-0 font-title fs-5">Wolfgang Amadeus</h2>
+                    <p class="my-0 font-text fs-6">Pôle</p>
+                  </div>
+                </header>
+                <main class="card-body p-0">
+                  <div class="d-flex justify-content-between bg-color-3-opacity m-0 px-2 card-title font-text fs-5">
+                      <p class="mb-1">thème</p>
+                      <p class="mb-1 fs-6">12/04/25</p>
+                  </div>
+                  <div class="px-1 color-4 px-2">
+                    <h3 class="card-title font-title mb-0 fs-5">Sujet</h3>
+                    <p class="card-text text-article font-text fs-6">  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                                                            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                                                            Duis aute irure dolor in reprehenderit in voluptate velit
+                                                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                                            occaecat cupidatat non proident, sunt in culpa qui officia
+                                                                            deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+                  <div class="color-4 p-1 w-50 mx-auto">
+                    <img src="images/kate-sade-1aLGXwx0JHo-unsplash.jpg" alt="my office" class="img-fluid border-dark p-0">
+                  </div>
+                </main>
+                <footer class="bg-color-3-opacity d-flex justify-content-end pt-1 border border-dark">
+                  <div class="d-flex px-3">
+                    <div>
+                      <span class="material-icons mx-1">visibility</span>
+                      <span class="material-icons mx-1 text-danger d-none">favorite</span>
+                    </div>
+                    <span>000</span>
+                  </div>
+                  <div class="d-flex px-3">
+                    <span class="material-icons mx-1">favorite_border</span>
+                    <span>000</span>
+                  </div>
+                  <div class="d-flex px-3">
+                    <span class="material-icons mx-1">forum</span>
+                    <span>000</span>
+                  </div>
+              </footer>
+            </section>
+            <section class="border border-dark mt-1 card color-4">
+              <header class="d-flex p-1 color-3 card-header">
+                <div class="rounded-circle avatar-container color-4 mt-1 mx-1">
+                  <img alt="user account icon" src="icons/round_account_circle_black_24dp.png" class="w-100">
+                </div>
+                <div class="mx-2 text-light">
+                  <h2 class="my-0 font-title fs-5">Wolfgang Amadeus</h2>
+                  <p class="my-0 font-text fs-6">Pôle</p>
+                </div>
+              </header>
+              <main class="card-body p-0">
+                <div class="d-flex justify-content-between bg-color-3-opacity m-0 px-2 card-title font-text fs-5">
+                    <p class="mb-1">thème</p>
+                    <p class="mb-1 fs-6">12/04/25</p>
+                </div>
+                <div class="px-1 color-4 px-2">
+                  <h3 class="card-title font-title mb-0 fs-5">Sujet</h3>
+                  <p class="card-text text-article font-text fs-6">  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                                          sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                                          aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                                                          ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                                                          Duis aute irure dolor in reprehenderit in voluptate velit
+                                                                          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                                          occaecat cupidatat non proident, sunt in culpa qui officia
+                                                                          deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+                <div class="color-4 p-1 w-50 mx-auto">
+                  <img src="images/kate-sade-1aLGXwx0JHo-unsplash.jpg" alt="my office" class="img-fluid border-dark p-0">
+                </div>
+              </main>
+              <footer class="bg-color-3-opacity d-flex justify-content-end pt-1 border border-dark">
+                <div class="d-flex px-3">
+                  <div>
+                    <span class="material-icons mx-1">visibility</span>
+                    <span class="material-icons mx-1 text-danger d-none">favorite</span>
+                  </div>
+                  <span>000</span>
+                </div>
+                <div class="d-flex px-3">
+                  <span class="material-icons mx-1">favorite_border</span>
+                  <span>000</span>
+                </div>
+                <div class="d-flex px-3">
+                  <span class="material-icons mx-1">forum</span>
+                  <span>000</span>
+                </div>
+            </footer>
+          </section>
+          <section class="border border-dark mt-1 card color-4">
+            <header class="d-flex p-1 color-3 card-header">
+              <div class="rounded-circle avatar-container color-4 mt-1 mx-1">
+                <img alt="user account icon" src="icons/round_account_circle_black_24dp.png" class="w-100">
+              </div>
+              <div class="mx-2 text-light">
+                <h2 class="my-0 font-title fs-5">Wolfgang Amadeus</h2>
+                <p class="my-0 font-text fs-6">Pôle</p>
+              </div>
+            </header>
+            <main class="card-body p-0">
+              <div class="d-flex justify-content-between bg-color-3-opacity m-0 px-2 card-title font-text fs-5">
+                  <p class="mb-1">thème</p>
+                  <p class="mb-1 fs-6">12/04/25</p>
+              </div>
+              <div class="px-1 color-4 px-2">
+                <h3 class="card-title font-title mb-0 fs-5">Sujet</h3>
+                <p class="card-text text-article font-text fs-6">  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                                                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                                                        Duis aute irure dolor in reprehenderit in voluptate velit
+                                                                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                                        occaecat cupidatat non proident, sunt in culpa qui officia
+                                                                        deserunt mollit anim id est laborum.
+                </p>
+              </div>
+              <div class="color-4 p-1 w-50 mx-auto">
+                <img src="images/kate-sade-1aLGXwx0JHo-unsplash.jpg" alt="my office" class="img-fluid border-dark p-0">
+              </div>
+            </main>
+            <footer class="bg-color-3-opacity d-flex justify-content-end pt-1 border border-dark">
+              <div class="d-flex px-3">
+                <div>
+                  <span class="material-icons mx-1">visibility</span>
+                  <span class="material-icons mx-1 text-danger d-none">favorite</span>
+                </div>
+                <span>000</span>
+              </div>
+              <div class="d-flex px-3">
+                <span class="material-icons mx-1">favorite_border</span>
+                <span>000</span>
+              </div>
+              <div class="d-flex px-3">
+                <span class="material-icons mx-1">forum</span>
+                <span>000</span>
+              </div>
+          </footer>
+        </section>
+          </div>
+          <div class="d-none d-md-block d-flex d-flex-column col-md-4 position-md-fixed aside-column-md-position vh-100 m-1 p-0">
+            <aside class="aside-height border border-dark mx-2 my-4">
+              posts récents
+            </aside>
+            <aside class="aside-height border border-dark mx-2 my-4">
+              posts likés
+            </aside>
+          </div>
+          <div class="d-none d-md-block col-md-1 bg-dark bg-opacity-25 p-0 container-img-position position-md-fixed colum-picture-position vh-100 right-column-picture-md-position">
+            <img src="images/the-blowup-17qno4cS6l0-unsplash.jpg" alt="façade de building vitré" class="img-fit w-100 h-100 ">
+          </div>
+        </article>
       </main>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-              integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+              integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+              crossorigin="anonymous"></script>
     </body>
 </html>      
