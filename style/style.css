@@ -12,24 +12,58 @@ main colors->
   background-color: #5c4d4d;
 }
 
-.head-nav1 {
+.color-2 {
+  background-color: #915b4a;
+}
+
+.color-3 {
   background-color: #a96851;
 }
 
-.bg-color2 {
-  background-color: #915b4a;
+.color-4 {
+  background-color: #f2f1e7;
 }
+
 
 /*--- fonts ---*/
 
 @font-face {
-  font-family: "Wonderbar-pALD";
-  src: url("../fonts/Wonderbar-pALD.ttf") format("truetype");
+  font-family: "ShadowsIntoLightTwo-Regular";
+  src: url("../fonts/ShadowsIntoLightTwo-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family:  "Barlow-Medium";
+  src: url("../fonts/Barlow-Medium.ttf") format("truetype");
+}
 
+@font-face {
+  font-family:  "BarlowCondensed-Regular";
+  src: url("../fonts/BarlowCondensed-Regular.ttf") format("truetype");
+}
 
-/*--- begin navbar */
+@font-face {
+  font-family:  "BarlowSemiCondensed-Regular";
+  src: url("../fonts/BarlowSemiCondensed-Regular.ttf") format("truetype");
+}
+
+.font-title {
+  font-family: Barlow-medium;
+}
+
+.font-text {
+  font-family: BarlowSemiCondensed-Regular;}
+
+.font-aside {
+  font-family: BarlowCondensed-Regular;
+}
+
+/*--  begin header  --*/
+
+.header-top {
+  z-index:1;
+}
+    /*--- begin navbar */
 
 .logo-brand {
   width: 150px;
@@ -40,43 +74,123 @@ main colors->
 }
 
 .list-width {
-  width: 95%;
+  width: 20em;
 }
 
-.position-list {
-  left: 2.5%;
-}
 
-/*--- end navbar ---*/
+    /*--- end navbar ---*/
 
 h1 {
-  font-family: "Wonderbar-pALD";
-  font-size: larger;
+  font-family: "ShadowsIntoLightTwo-Regular";
+  font-size: x-large;
+  font-weight: 600;
 }
 
 .h1-position {
-  top: 1.15em;
-  left: 27%;
+  top: .75em;
+  left: 3.85em;
   z-index: 1;
 }
 
 .logo {
   width: 70px;
-  top: -0.45%;
+  top: -0.35em;
   left: 37.5%;
   z-index: 0;
+  opacity: 0.75;
 }
-.useraccount {
-  width: 50px;
-  height: 50px;
+
+.avatar-navbar-container {
+  height: 2.75em;
+  width: 2.75em;
   background-color: #f2f1e7;
 }
 
+/*--  end header  --*/
+
+  /*-- begin article --*/
+/*- container posts flow -*/
+.flow-position {
+  top: 4em;
+}
+
+/* left & right column */
+.img-fit {
+  object-fit: cover;
+}
+
+.container-img-position {
+  top: 5em;
+}
+
+/*- begin section article -*/
+.bg-color-3-opacity {
+  background-color: rgb(202, 143, 122);
+}
+
+.avatar-post-container {
+  height: 2.75em;
+  width: 2.75em;
+  background-color: #f2f1e7;
+}
+
+.text-article {
+  height: 6.9em;
+  white-space: normal;
+  overflow-y: hidden;
+}
+/*-  end section article -*/
+
+
+/*-- background notifications column */
+.img-container-width_position {
+  top: 5.15em;
+  left: 8.5%;
+  width: 83.2%;
+  height: 100vh;
+  z-index: -1;
+}
+
+
+/*-- notifications column --*/
+.container-aside-column-position {
+  top: 8em;
+}
+
+.aside-position {
+  top: 7em;
+  left: 2.5%;
+
+}
+
+.aside-width {
+  width: 95%;
+}
+
+.tabs-container-size {
+  width: 100%;
+  max-width: 25em;
+}
+
+.nav-tabs .nav-link.active {
+  font-weight: bold;
+  background-color: #915b4a;
+  border: grey groove 3px;
+  border-radius: 5px 5px 0 0;
+}
+
+
+.item-label-avatar-container {
+  width: 2.5em;
+  height: 1.6em;
+  background-color: #f2f1e7;
+  border: 1px solid black;
+}
+
+  /*-- end article */
 
 
 @media (min-width: 576px) {
-
-
   .position-sm-static {
     position: static !important;
   }
@@ -95,16 +209,6 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  
-  /*used*/
-  .position-md-static {
-    position: static !important;
-  }
-
-  .w-md {
-    width: auto;
-  }
-  
   .list-width-md {
     width: auto;
   }
@@ -112,8 +216,36 @@ h1 {
   .li-navbar-size{
     width: 32.5%;
   }
-  /**/
 
+  .flow-md-position {
+    left: 8.5%;
+    top: 5em;
+  }
+
+  .flow-md-width {
+    width: 48%;
+  }
+
+  .container-aside-column-md-position {
+  left: 7.5%;
+  top: 15em;
+  }
+
+  .aside-md-position {
+    top: 9em;
+    left: 173.5%;
+  }
+
+  .aside-md-width {
+    width: 97%;
+  }
+  .right-column-picture-md-position {
+  left: 91.70%;
+  }
+  
+  .position-md-static {
+    position: static !important;
+  }
 
   .position-md-relative {
     position: relative !important;
@@ -145,6 +277,13 @@ h1 {
   }
   .position-lg-sticky {
     position: sticky !important;
+  }
+
+  .item-label-avatar-container {
+    width: 3em;
+    height: 3em;
+    background-color: #f2f1e7;
+    border: 1px solid black;
   }
 }
 
