@@ -52,11 +52,10 @@ main colors->
 }
 
 .font-text {
-  font-family: BarlowCondensed-Regular;
-}
+  font-family: BarlowSemiCondensed-Regular;}
 
 .font-aside {
-  font-family: BarlowSemiCondensed-Regular;
+  font-family: BarlowCondensed-Regular;
 }
 
 /*--  begin header  --*/
@@ -100,9 +99,10 @@ h1 {
   z-index: 0;
   opacity: 0.75;
 }
-.avatar-container {
-  width: 40px;
-  height: 40px;
+
+.avatar-navbar-container {
+  height: 2.75em;
+  width: 2.75em;
   background-color: #f2f1e7;
 }
 
@@ -111,7 +111,7 @@ h1 {
   /*-- begin article --*/
 /*- container posts flow -*/
 .flow-position {
-  top: 3.70em;
+  top: 4em;
 }
 
 /* left & right column */
@@ -128,12 +128,65 @@ h1 {
   background-color: rgb(202, 143, 122);
 }
 
+.avatar-post-container {
+  height: 2.75em;
+  width: 2.75em;
+  background-color: #f2f1e7;
+}
+
 .text-article {
   height: 6.9em;
   white-space: normal;
   overflow-y: hidden;
 }
 /*-  end section article -*/
+
+
+/*-- background notifications column */
+.img-container-width_position {
+  top: 5.15em;
+  left: 8.5%;
+  width: 83.2%;
+  height: 100vh;
+  z-index: -1;
+}
+
+
+/*-- notifications column --*/
+.container-aside-column-position {
+  top: 8em;
+}
+
+.aside-position {
+  top: 7em;
+  left: 2.5%;
+
+}
+
+.aside-width {
+  width: 95%;
+}
+
+.tabs-container-size {
+  width: 100%;
+  max-width: 25em;
+}
+
+.nav-tabs .nav-link.active {
+  font-weight: bold;
+  background-color: #915b4a;
+  border: grey groove 3px;
+  border-radius: 5px 5px 0 0;
+}
+
+
+.item-label-avatar-container {
+  width: 2.5em;
+  height: 1.6em;
+  background-color: #f2f1e7;
+  border: 1px solid black;
+}
+
   /*-- end article */
 
 
@@ -173,13 +226,18 @@ h1 {
     width: 48%;
   }
 
-  .aside-column-md-position {
-  left: 57.5%;
-  top: 5em;
+  .container-aside-column-md-position {
+  left: 7.5%;
+  top: 15em;
   }
 
-  .aside-height {
-    height: 40vh;
+  .aside-md-position {
+    top: 9em;
+    left: 173.5%;
+  }
+
+  .aside-md-width {
+    width: 97%;
   }
   .right-column-picture-md-position {
   left: 91.70%;
@@ -219,6 +277,13 @@ h1 {
   }
   .position-lg-sticky {
     position: sticky !important;
+  }
+
+  .item-label-avatar-container {
+    width: 3em;
+    height: 3em;
+    background-color: #f2f1e7;
+    border: 1px solid black;
   }
 }
 
